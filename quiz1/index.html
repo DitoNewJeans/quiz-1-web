@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Wirandito Sarwono</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/quiz1/profile.html">Profile</a></li>
+          <li><a href="/quiz1/hometown.html">Hometown</a></li>
+          <li><a href="/quiz1/food.html">Foods</a></li>
+          <li><a href="/quiz1/places.html">Tourist Place</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Wirandito Sarwono</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/" onclick="toggleMenu()">Home</a></li>
+          <li>
+            <a href="profile.html" onclick="toggleMenu()">Profile</a>
+          </li>
+          <li>
+            <a href="./quiz1/hometown.html" onclick="toggleMenu()">Hometown</a>
+          </li>
+          <li><a href="./quiz1/food.html" onclick="toggleMenu()">Food</a></li>
+          <li>
+            <a href="./quiz1/places.html" onclick="toggleMenu()"
+              >Tourist Places</a
+            >
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="/assets/ditopng.png" alt="WS PP" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Wirandito Sarwono</h1>
+        <p class="section__text__p2">TEST</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('/assets/WiranditoCV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            contact info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="/assets/linkedin.png"
+            alt="LinkedIn"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/wiranditos/'"
+          />
+          <img
+            src="/assets/github.png"
+            alt="GitHub"
+            class="icon"
+            onclick="location.href='https://github.com/DitoNewJeans'"
+          />
+        </div>
+      </div>
+      <img
+        src="/assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">With Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="/assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:wiranditoss@gmail.com">Wiranditoss@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="/assets/linkedin.png"
+            alt="Linkedin Icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/wiranditos/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./quiz1/profile.html">Profile</a></li>
+            <li><a href="./quiz1/hometown.html">Hometown</a></li>
+            <li><a href="./quiz1/food.html">Foods</a></li>
+            <li><a href="./quiz1/places.html">Tourist Place</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p></p>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
